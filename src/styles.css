@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0ebd8;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+  display: flex;
+  background-color: #1d2d44;
+  color: #ffff;
+  justify-content: center;
+  font-size: 36px;
+  padding: 0 5rem 0 5rem;
+}
+
+.class-cards {
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-direction: row;
+  text-align: justify;
+  padding: 2rem 5rem;
+}
+
+.languages-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.language-icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .class-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.unitary-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  width: 170rem;
+  height: 15rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.class-skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*#3e5c76*/
