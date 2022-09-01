@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #333333;
+  background-color: #222222;
   background-repeat: no-repeat;
   font-family: 'Archivo', sans-serif;
   font-weight: 500;
@@ -70,26 +70,77 @@ h1 {
 .class-cards {
   color: #fff;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: justify;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 1.5rem;
   /* text-shadow: 1px 1px 3px #000; */
-  padding: 2rem 5rem;
+  padding: 2rem 25rem;
 }
 
 .unitary-card {
   display: flex;
-  flex-direction: column;
-  /* box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1); */
+  flex-direction: row;
+  width: 60rem;
+  color: #333333;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 6rem;
+  transition: all .2s ease-in-out;
 }
 
-.card-header {
+.unitary-card:hover {
+  transform: scale(1.05);
+}
+
+/* .card-header {
+  color: #fff;
+  background: linear-gradient(
+    8deg,
+    rgba(82,82,82,1) 0%,
+    rgba(255,133,0,1) 0%,
+    rgba(205,28,180,1) 55%,
+    rgba(62,0,250,1) 100%
+  ); 
   height: 3rem;
   border-radius: 1rem 1rem 0 0;
   align-items: center;
+} */
+
+/*------- Cards contents to left side ------ */
+
+.card-written-left {
+  border-radius: 1rem;
+  margin-right: -1rem;
+  background-color: #fff; 
+  z-index: 2;
 }
+
+.card-colored-left {
+  width: 40rem;
+  border-radius: 1rem 0 0 1rem;
+  background: linear-gradient(270deg, rgba(82,82,82,1) 0%, rgba(131,204,255,1) 0%, rgba(0,104,255,1) 100%);
+}
+
+/*------- Cards contents to left side ------ */
+
+/*------- Cards contents to right side ------ */
+
+.card-written-right {
+  border-radius: 1rem;
+  margin-left: -1rem;
+  background-color: #fff; 
+  z-index: 2;
+}
+
+.card-colored-right {
+  width: 40rem;
+  border-radius: 0 1rem 1rem 0rem;
+  background: linear-gradient(90deg, rgba(82,82,82,1) 0%, rgba(202,131,255,1) 0%, rgba(78,0,133,1) 100%);
+}
+
+
+/*------- Cards contents to right side ------ */
 
 .card-title {
   text-align: center;
@@ -103,27 +154,31 @@ h1 {
 }
 
 .class-menu {
-  background-image: linear-gradient(to right, #ff8500, #ff666f);  
-  border-radius: 1rem 0 0 1rem;
 }
 
+
 .class-objective {
-  background-image: linear-gradient(to right, #ff666f, #fa6aa4, #df7dd3);
+
 }
 
 .class-skills {
-  background-image: linear-gradient(to right, #df7dd3, #be9cf5, #9bb6ff);
 }
 
 .class-criteria {
-  background-image: linear-gradient(to right, #9bb6ff, #86cbff, #8adcff);
-  border-radius: 0 1rem 1rem 0;
 }
 /*------- Class cards ------ */
 
 /*------- Class content ------ */
 
 .class-content {
-  background-color: #fff;
 }
 /*------- Class content ------ */
+
+.menu-icon {
+  padding: 4.5rem 0 0 5rem;
+}
+
+.objective-icon {
+  width: 3.5rem;
+  padding: 4.5rem 0 0 4rem;
+}
