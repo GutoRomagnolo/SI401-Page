@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
   <head>
+    <title>Programação para a Web</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Figtree"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/starjedi-special-edition" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo:500" rel="stylesheet">
   </head>
   <body>
     <div class="main-container">
       <div class="header-container">
-        <p>Programação para a Web</p>
+        <p> 
+          Programação para a web  
+          <span class="html-tag">
+            &lt;/&gt;
+          </span>
+        </p>
       </div>
       <div class="class-cards">
         <div class="unitary-card class-menu">
@@ -61,11 +67,11 @@
           <img class="language-icon" src="./assets/icon-php.png">
         </div> -->
         </div>
-        <div class="unitary-card class-objective">
+        <div class="unitary-card class-criteria">
           <div class="card-header">
             <h1 class="card-title">Critérios de avaliação</h1>
           </div>
-          <div class="card-content" id="example" onclick="showDiv()">
+          <div class="card-content" id="example">
             <p class="card-text">
               A disciplina contará com um Projeto Final (a ser desenvolvido em
               grupo), dividido em três entregas parciais ao longo do semestre, e
@@ -78,11 +84,9 @@
           </div>
         </div>
       </div>
+      <div class="class-content">
+        <p>Programação para a web  <span>&lt;/&gt;</span></p>
+      </div>
     </div>
   </body>
-  <script>
-    function showDiv() {
-      document.getElementById("example").classList.toggle('MyClass');
-    }
-  </script>
 </html>
