@@ -70,30 +70,32 @@ h1 {
 .class-cards {
   color: #fff;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: justify;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 1.5rem;
   /* text-shadow: 1px 1px 3px #000; */
-  padding: 2rem 25rem;
+  padding: 2rem 2rem;
 }
 
 .unitary-card {
   display: flex;
-  flex-direction: row;
-  width: 60rem;
+  flex-direction: column;
   color: #333333;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
   margin-bottom: 6rem;
   transition: all .2s ease-in-out;
+  margin-right: 1rem;
+  width: 60rem;
 }
 
 .unitary-card:hover {
   transform: scale(1.05);
 }
 
-/* .card-header {
+.card-header {
+  justify-content: center;
   color: #fff;
   background: linear-gradient(
     8deg,
@@ -102,14 +104,17 @@ h1 {
     rgba(205,28,180,1) 55%,
     rgba(62,0,250,1) 100%
   ); 
-  height: 3rem;
-  border-radius: 1rem 1rem 0 0;
+  /* border-radius: 1rem 1rem 0 0; */
   align-items: center;
-} */
+}
 
-/*------- Cards contents to left side ------ */
+.card-content {
+  background-color: #fff;
+}
 
-.card-written-left {
+/* ------- Cards contents to left side ------ */
+
+/* .card-written-left {
   border-radius: 1rem;
   margin-right: -1rem;
   background-color: #fff; 
@@ -120,13 +125,13 @@ h1 {
   width: 40rem;
   border-radius: 1rem 0 0 1rem;
   background: linear-gradient(270deg, rgba(82,82,82,1) 0%, rgba(131,204,255,1) 0%, rgba(0,104,255,1) 100%);
-}
+} */
 
 /*------- Cards contents to left side ------ */
 
 /*------- Cards contents to right side ------ */
 
-.card-written-right {
+/* .card-written-right {
   border-radius: 1rem;
   margin-left: -1rem;
   background-color: #fff; 
@@ -138,7 +143,7 @@ h1 {
   border-radius: 0 1rem 1rem 0rem;
   background: linear-gradient(90deg, rgba(82,82,82,1) 0%, rgba(202,131,255,1) 0%, rgba(78,0,133,1) 100%);
 }
-
+ */
 
 /*------- Cards contents to right side ------ */
 
@@ -175,7 +180,11 @@ h1 {
 /*------- Class content ------ */
 
 .menu-icon {
-  padding: 4.5rem 0 0 5rem;
+  display: flex;
+  margin: auto;
+  background-color: #ffff;
+  border-radius: 50%;
+  height: 5rem;
 }
 
 .objective-icon {
