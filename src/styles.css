@@ -1,45 +1,63 @@
+/*------- Global styles ------ */
 body {
   margin: 0;
-  background-color: #222222;
+  background: #222222;
   background-repeat: no-repeat;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   font-weight: 500;
+  cursor: default;
 }
 
 h1 {
+  font-size: 4.75rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
   margin: 0;
   font-size: 1.5rem;
+}
+
+h4 {
+  margin: 0;
+  padding-top: 0.5rem;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
 }
+/*------- Global styles ------ */
 
+
+/*--------- Header ------ */
 .header-container {
   display: flex;
   color: #ffff;
   justify-content: center;
-  font-size: 76px;
   padding: 0 5rem 0 5rem;
   align-items: center;
-  cursor: default;
 }
 
 .html-tag {
   background: linear-gradient(
-    to right, #ff8500, 
-    #ff666f, 
+    to right,
+    #ff8500,
+    #ff666f,
     #fa6aa4,
-    #df7dd3, 
-    #9bb6ff, 
-    #86cbff, 
+    #df7dd3,
+    #9bb6ff,
+    #86cbff,
     #8adcff
-  );  
+  );
   font-weight: 600;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: default;
   margin-left: 1rem;
 }
@@ -47,17 +65,7 @@ h1 {
 .html-tag:hover {
   transform: scale(1.1);
 }
-
-/* .languages-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 1rem;
-} */
-
-/* .language-icon {
-  height: 3rem;
-  width: 3rem;
-} */
+/*--------- Header ------ */
 
 @media only screen and (max-width: 1000px) {
   .class-cards {
@@ -68,126 +76,165 @@ h1 {
 
 /*------- Class cards ------ */
 .class-cards {
-  color: #fff;
   display: flex;
   flex-direction: row;
+  color: #fff;
   text-align: justify;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 1.5rem;
   /* text-shadow: 1px 1px 3px #000; */
   padding: 2rem 2rem;
 }
 
+.card-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 6.25rem;
+  background: rgb(74,159,247);
+  background: linear-gradient(203deg, rgba(74,159,247,1) 0%, rgba(135,74,247,1) 54%, rgba(251,83,227,1) 100%);
+}
+
 .unitary-card {
   display: flex;
   flex-direction: column;
-  color: #333333;
+  color: #000;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  margin-bottom: 6rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   margin-right: 1rem;
   width: 60rem;
 }
 
 .unitary-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
-.card-header {
-  justify-content: center;
-  color: #fff;
-  background: linear-gradient(
-    8deg,
-    rgba(82,82,82,1) 0%,
-    rgba(255,133,0,1) 0%,
-    rgba(205,28,180,1) 55%,
-    rgba(62,0,250,1) 100%
-  ); 
-  /* border-radius: 1rem 1rem 0 0; */
-  align-items: center;
+.card-title {
+  text-align: center;
+  padding-top: 4rem;
 }
 
 .card-content {
   background-color: #fff;
 }
 
-/* ------- Cards contents to left side ------ */
-
-/* .card-written-left {
-  border-radius: 1rem;
-  margin-right: -1rem;
-  background-color: #fff; 
-  z-index: 2;
-}
-
-.card-colored-left {
-  width: 40rem;
-  border-radius: 1rem 0 0 1rem;
-  background: linear-gradient(270deg, rgba(82,82,82,1) 0%, rgba(131,204,255,1) 0%, rgba(0,104,255,1) 100%);
-} */
-
-/*------- Cards contents to left side ------ */
-
-/*------- Cards contents to right side ------ */
-
-/* .card-written-right {
-  border-radius: 1rem;
-  margin-left: -1rem;
-  background-color: #fff; 
-  z-index: 2;
-}
-
-.card-colored-right {
-  width: 40rem;
-  border-radius: 0 1rem 1rem 0rem;
-  background: linear-gradient(90deg, rgba(82,82,82,1) 0%, rgba(202,131,255,1) 0%, rgba(78,0,133,1) 100%);
-}
- */
-
-/*------- Cards contents to right side ------ */
-
-.card-title {
-  text-align: center;
-  padding-top: 0.5rem;
-}
-
 .card-text {
-  font-size: 18px;
+  font-size: 1.125rem;
   padding: 2rem;
   margin: 0;
 }
 
-.class-menu {
+.card-header-icon {
+  z-index: 1;
+  width: 3.5rem;
+  position: absolute;
+  padding: 2.1rem 0 0 2.1rem;
 }
 
-
-.class-objective {
-
+.card-header-content {
+  position: absolute;
+  padding-top: 2.2rem;
 }
 
-.class-skills {
-}
-
-.class-criteria {
+.icon-background {
+  width: 7.5rem;
+  position: relative;
 }
 /*------- Class cards ------ */
 
-/*------- Class content ------ */
-
-.class-content {
-}
-/*------- Class content ------ */
-
-.menu-icon {
+/*------- Topics cards ------ */
+.topics-container {
   display: flex;
-  margin: auto;
-  background-color: #ffff;
-  border-radius: 50%;
-  height: 5rem;
+  flex-direction: column;
+  padding: 0rem 3.05rem 0 2rem;
+  font-family: "Roboto", sans-serif;
 }
 
-.objective-icon {
-  width: 3.5rem;
-  padding: 4.5rem 0 0 4rem;
+.topics-header {
+  display: flex;
+  color: #ffff;
+  justify-content: center;
+  padding: 0 5rem 0 5rem;
+  align-items: center;
+  cursor: default;
 }
+
+.topic-title {
+  padding: 1.5rem 0 0 1.5rem;
+  font-size: 1.5px;
+}
+
+.topic-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.unitary-topic-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  width: 55rem;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.unitary-topic-card:hover {
+  transform: scale(1.02);
+}
+
+.lateral-image {
+  width: 10rem;
+  background: rgb(74,159,247);
+  background: linear-gradient(203deg, rgba(74,159,247,1) 0%, rgba(135,74,247,1) 34%, rgba(251,83,227,1) 100%);
+}
+
+.topic-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.topic-text {
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  font-size: 1.125rem;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+/*------- Topics cards ------ */
+
+
+/*------- Footer ------ */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  height: 4rem;
+  background: #222222;
+  color: #fff;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-git {
+  width: 3rem;
+  padding-left: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-git:hover {
+  transform: scale(1.08);
+}
+/*------- Footer ------ */

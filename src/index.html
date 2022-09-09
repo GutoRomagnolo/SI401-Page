@@ -2,30 +2,38 @@
 <html lang="pt">
   <head>
     <title>Programação para a Web</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="./assets/gt-logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/starjedi-special-edition" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Archivo:500" rel="stylesheet">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/gt-logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.cdnfonts.com/css/starjedi-special-edition"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:500"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main-container">
-      <div class="header-container">
-        <p> 
-          Programação para a web
-        </p>
-        <p class="html-tag">
-          &lt;/&gt;
-        </p>
-      </div>
-      <div class="class-cards">
+      <header class="header-container">
+        <h1>Programação para a web</h1>
+        <h1 class="html-tag">&lt;/&gt;</h1>
+      </header>
+      <section class="class-cards">
         <div class="unitary-card class-menu">
-          <div class="card-header">
-            <img class="menu-icon" src="./assets/icon-menu.svg"/>
-          </div>
+          <header class="card-header">
+            <div class="card-header-content">
+              <img class="card-header-icon" src="./assets/icon-menu.svg" />
+              <img class="icon-background" src="./assets/icon-background.svg" />
+            </div>
+          </header>
           <div class="card-content">
-            <h1 class="card-title">Ementa</h1>
+            <h3 class="card-title">Ementa</h3>
             <p class="card-text">
               Elaboração de páginas web. Linguagens de marcação. Folhas de
               estilo. Javascript. Uso de linguagens de programação para geração
@@ -36,11 +44,14 @@
           </div>
         </div>
         <div class="unitary-card class-objective">
-          <div class="card-header">
-            <img class="objective-icon" src="./assets/icon-target.svg"/>
-          </div>
+          <header class="card-header">
+            <div class="card-header-content">
+              <img class="card-header-icon" src="./assets/icon-target.svg" />
+              <img class="icon-background" src="./assets/icon-background.svg" />
+            </div>
+          </header>
           <div class="card-content">
-            <h1 class="card-title">Objetivos</h1>
+            <h3 class="card-title">Objetivos</h3>
             <p class="card-text">
               Colocar em perspectiva a programação para Web. Capacitar o aluno a
               compreender as principais linguagens de marcação e estilo.
@@ -51,11 +62,17 @@
           </div>
         </div>
         <div class="unitary-card class-skills">
-          <div class="card-header">
-            <img class="objective-icon" src="./assets/icon-target.svg"/>
-          </div>
+          <header class="card-header">
+            <div class="card-header-content">
+              <img
+                class="card-header-icon"
+                src="./assets/icon-competencies.svg"
+              />
+              <img class="icon-background" src="./assets/icon-background.svg" />
+            </div>
+          </header>
           <div class="card-content">
-            <h1 class="card-title">Competências</h1>
+            <h3 class="card-title">Competências</h3>
             <p class="card-text">
               Compreensão do funcionamento de aplicações web baseadas em
               arquitetura cliente-servidor. Criação de páginas web estáticas
@@ -64,31 +81,413 @@
               front-end e back-end.
             </p>
           </div>
-          <!-- <div class="languages-container">
-          <img class="language-icon" src="./assets/icon-html.png">
-          <img class="language-icon" src="./assets/icon-css.png">
-          <img class="language-icon" src="./assets/icon-js.png">
-          <img class="language-icon" src="./assets/icon-php.png">
-          </div> -->
         </div>
         <div class="unitary-card class-criteria">
-          <div class="card-header">
-            <img class="objective-icon" src="./assets/icon-target.svg"/>
-          </div>
+          <header class="card-header">
+            <div class="card-header-content">
+              <img
+                class="card-header-icon"
+                src="./assets/icon-evaluation.svg"
+              />
+              <img class="icon-background" src="./assets/icon-background.svg" />
+            </div>
+          </header>
           <div class="card-content">
-            <h1 class="card-title">Critérios de avaliação</h1>
+            <h3 class="card-title">Critérios de avaliação</h3>
             <p class="card-text">
               A disciplina contará com um Projeto Final (a ser desenvolvido em
               grupo), dividido em três entregas parciais ao longo do semestre, e
               uma série de exercícios práticos de fixação (a serem desenvolvidos
               individualmente). Tais atividades serão utilizadas para avaliar a
-              aprendizagem do aluno. Particularmente no caso do Projeto Final,
-              as notas individuais de cada aluno serão atribuídas conforme sua
-              contribuição em cada etapa.
+              aprendizagem do aluno.
             </p>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="topics-container">
+        <header class="topics-header">
+          <h2>Conteúdo programático</h2>
+        </header>
+        <section class="topic-cards">
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 0</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> instruções gerais sobre a
+                  disciplina.
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> descrever como será o
+                  funcionamento da disciplina ao longo do semestre, mais
+                  especificamente o formato das aulas, o tema do Projeto Final,
+                  os critérios de avaliação e os plantões de dúvidas
+                  (monitorias).
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 1</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> visão geral sobre o funcionamento
+                  da web, com foco nas interações navegador-servidor, e
+                  contextualização da Programação para Web.
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> descrever em linhas gerais os
+                  passos executados a cada requisição feita por um navegador a
+                  um servidor, interpretar uma mensagem HTTP e apresentar o que
+                  será discutido nesse semestre dentro do contexto de
+                  Programação para a Web.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 2</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> Hypertext Markup Language (HTML) e
+                  estrutura de documentos HTML (tags, declarações DOCTYPE,
+                  elementos HTML e atributos de elementos HTML).
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> entender o que é HTML e construir
+                  documentos que contenham os elementos obrigatórios definidos
+                  no padrão.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 3</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> exemplos de elementos HTML
+                  (parágrafos, títulos, imagens, hyperlinks, tabelas, listas e
+                  iFrames).
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> construir documentos HTML que
+                  utilizem os elementos mais comuns.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 4</h3>
+              </div>
+              <div class="topic-text">
+                <p><strong>Conteúdo:</strong> o elemento HEAD de HTML.</p>
+                <p>
+                  <strong>Objetivos:</strong> construir documentos HTML que
+                  possuam o elemento obrigatório HEAD em sua estrutura.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 5</h3>
+              </div>
+              <div class="topic-text">
+                <p><strong>Conteúdo:</strong> layouts via HTML.</p>
+                <p>
+                  <strong>Objetivos:</strong> estruturar o conteúdo de
+                  documentos HTML em layouts bem definidos.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 6</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> Cascade Style Sheets (CSS):
+                  definições, sintaxe e formas de utilização
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> construir folhas de estilo que
+                  definam a aparência de um documento HTML e compreender a
+                  formatação que será aplicada a um elemento HTML por regras CSS
+                  já criadas.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 7</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> Cascade Style Sheets (CSS):
+                  propriedades de fundo de tela, de texto e de fonte.
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> criar folhas de estilo que
+                  explorem as propriedades de fundo de tela, texto e de fonte de
+                  elementos HTML.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 8</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> Cascade Style Sheets (CSS):
+                  propriedades abreviadas e o modelo de caixas (box model).
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> definição de layouts de páginas
+                  explorando o modelo de caixas de CSS.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 9</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> programação no front-end com
+                  JavaScript: definições, sintaxe, instruções e o objeto DOM.
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> escrever programas básicos, em
+                  JavaScript, para serem executados em navegadores.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 10</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> detecção e reação a eventos via
+                  JavaScript.
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> escrever programas, em JavaScript
+                  e que são executados no navegador, que reajam a eventos
+                  disparados pelo usuário.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 11</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> manipulação de formulários HTML via
+                  JavaScript.
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> escrever programas, em JavaScript
+                  e que são executados no navegador, que manipulem dados
+                  fornecidos pelo usuário via formulários HTML.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 12</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> orientação a objetos em JavaScript.
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> escrever programas, em JavaScript
+                  e que são executados no navegador, seguindo o paradigma de
+                  orientação a objetos.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 13</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> programação no back-end com PHP:
+                  infraestrutura necessária e aspectos gerais da linguagem.
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> escrever programas simples, em
+                  PHP, que são executados no servidor.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 14</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> aspectos específicos da linguagem
+                  PHP: operadores, estruturas de controle e funções.
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> escrever programas em PHP para
+                  serem executados no servidor.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 15</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> PHP e formulários HTML, Server Side
+                  Includes.
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> escrever programas, em PHP, que
+                  recebam e manipulem dados enviados pelo usuário, do frontend,
+                  e a partir de formulários HTML.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 16</h3>
+              </div>
+              <div class="topic-text">
+                <p><strong>Conteúdo:</strong> orientação a objetos em PHP.</p>
+                <p>
+                  <strong>Objetivos:</strong> escrever programas, em PHP,
+                  seguindo o paradigma de orientação a objetos.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 17</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong>Conteúdo:</strong> acesso a Bancos de Dados em PHP via
+                  PHP Data Objects (PDO).
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> escrever programas, em PHP, que
+                  manipulem bancos de dados.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 18</h3>
+              </div>
+              <div class="topic-text">
+                <p><strong>Conteúdo:</strong> Cookies e sessões em PHP.</p>
+                <p>
+                  <strong>Objetivos:</strong> escrever programas, em PHP, que
+                  mantenham sessões abertas durante a navegação de um mesmo
+                  usuário e permitam o fluxo de informações entre as páginas.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="unitary-topic-card">
+            <div class="lateral-image"></div>
+            <div class="topic-content">
+              <div class="topic-title">
+                <h3>Unidade 19</h3>
+              </div>
+              <div class="topic-text">
+                <p>
+                  <strong><strong>Conteúdo:</strong></strong> Comunicação
+                  assíncrona de dados entre back-end (aplicações em PHP) e
+                  front-end (scripts em JavaScript).
+                </p>
+                <p>
+                  <strong>Objetivos:</strong> escrever aplicações, com front-end
+                  escrito em JavaScript e backend em PHP, que troquem dados de
+                  maneira assíncrona.
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+      <footer class="footer-container">
+        <div class="footer-text">
+          <h3>Gustavo Ramos Romagnolo</h3>
+          <h4>@GutoRomagnolo</h4>
+        </div>
+        <a href="https://github.com/GutoRomagnolo" target="_blank">
+          <img class="icon-git" src="./assets/icon-git.png" />
+        </a>
+      </footer>
     </div>
   </body>
 </html>
