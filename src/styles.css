@@ -373,7 +373,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width:1819px) {
+@media only screen and (max-width:1842px) {
   .topic-cards {
     display: flex;
     flex-direction: column;
