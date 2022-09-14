@@ -327,10 +327,6 @@ h4 {
 
 
   /*------- Topics cards ------ */
-  .unitary-topic-card {
-    width: 20rem !important;
-  }
-
   .topic-cards {
     display: flex;
     flex-direction: column;
@@ -427,6 +423,18 @@ h4 {
 
   .card-content {
     height: 28rem;
+  }
+}
+
+@media only screen and (max-width: 879px) { 
+  .unitary-topic-card {
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .unitary-topic-card {
+    width: 20rem;
   }
 }
 /*------- Responsive section ------ */
