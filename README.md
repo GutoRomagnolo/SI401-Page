@@ -1,4 +1,4 @@
-# Página estática da disciplina SI401 - Programação para a Web :guitar:
+## Página estática da disciplina SI401 - Programação para a Web :guitar:
 
 ### Esse é um projeto de uma página estática utilizando HTML && CSS para fins avaliativos da respectiva disciplina SI401 da Faculdade de Tecnologia da Unicamp
 ----------
