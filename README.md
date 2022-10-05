@@ -6,7 +6,7 @@
 
 <br/>
 
-Aqui temos a página inicial, onde estão presentes algumas informações da disciplina, como a ementa, objetivos, critérios de avaliação, etc
+Aqui temos a página inicial, onde estão presentes algumas informações da disciplina, como a ementa, objetivos, critérios de avaliação, etc.
 <table>
   <tr>
     <th>
@@ -21,7 +21,7 @@ Aqui temos a página inicial, onde estão presentes algumas informações da dis
 </table>
 
 <br/>
-Essa é a página "secundária", onde estão presentes todos os tópicos que serão abordados durante o semestre da disciplina
+Essa é a página "secundária", onde estão presentes todos os tópicos que serão abordados durante o semestre da disciplina.
 <table>
   <tr>
     <th>
